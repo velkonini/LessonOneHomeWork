@@ -25,16 +25,27 @@
 #Задача 4
 
 #Задача 5
-costs = int(input("Введите издержки компании в этом месяце: "))
-proceeds = int(input("Введите выручку компании в этом месяце: "))
-if proceeds > costs:
-    print("Молодцы, наша фирма приносит прибыль")
-    profitability = proceeds / costs
-    print("Рентабильность: " + str(profitability))
-    employees = int(input("Введите количество сотрудников: "))
-    profit = proceeds - costs
-    profit_for_employee = profit / employees
-    print("Каждому сотруднику полагается " + str(profit_for_employee) + " от общей суммы прибыли")
-else:
-    print("Надо лучше работать, наша компания не приносит прибыль")
+# costs = int(input("Введите издержки компании в этом месяце: "))
+# proceeds = int(input("Введите выручку компании в этом месяце: "))
+# if proceeds > costs:
+#     print("Молодцы, наша фирма приносит прибыль")
+#     profitability = proceeds / costs
+#     print("Рентабильность: " + str(profitability))
+#     employees = int(input("Введите количество сотрудников: "))
+#     profit = proceeds - costs
+#     profit_for_employee = profit / employees
+#     print("Каждому сотруднику полагается " + str(profit_for_employee) + " от общей суммы прибыли")
+# else:
+#     print("Надо лучше работать, наша компания не приносит прибыль")
 
+#Задача 6
+
+km = int(input("Количество километров в первый день: "))
+new_dist = km + 1
+count = 0
+
+while km < new_dist:
+    km = km * 0.1 + km
+    count += 1
+    print(km)
+print("Для увеличения дистанции на 1 километр потребовалось " + str(count) + " дней")
